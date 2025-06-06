@@ -1,0 +1,76 @@
+[
+  {
+    "key": "ctrl+alt+insert",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "editor.action.clipboardCutAction",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+k",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+delete",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+enter",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "shift+ctrl+d",
+    "command": "workbench.view.debug"
+  },
+    {
+      "key": "shift+enter",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Run Python File",
+      "when": "editorLangId == python"
+    },
+    {
+      "key": "shift+enter",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Build and Run C# File",
+      "when": "editorLangId == csharp"
+    },
+    {
+      "key": "shift+enter",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Build and Run C++ File",
+      "when": "editorLangId == cpp"
+    },
+    {
+      "key": "shift+enter",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Compile and Run TypeScript File",
+      "when": "editorLangId == typescript"
+    },
+    {
+      "key": "shift+enter",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Compile and Run Java File",
+      "when": "editorLangId == java"
+    },
+    {
+      "key": "shift+enter",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Run JavaScript File",
+      "when": "editorLangId == javascript"
+    }
+]

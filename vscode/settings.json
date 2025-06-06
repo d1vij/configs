@@ -1,0 +1,78 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontFamily": "JetBrains Mono", 
+  "editor.fontLigatures": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": "allDocuments"
+  },
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.matchBrackets": "always",
+  "editor.guides.bracketPairs": false,
+  "editor.guides.bracketPairsHorizontal": false,
+  
+  "workbench.colorCustomizations": {
+    
+    "[Default Dark+]": {
+      "editorBracketMatch.background": "#f0f0f014",
+      // "editorBracketPairGuide.activeBackground1": "#D8D8D8",
+      // "editorBracketPairGuide.activeBackground2": "#C0B2B2",
+      // "editorBracketPairGuide.activeBackground3": "#E1D9B5",
+      // "editorBracketPairGuide.activeBackground4": "#C3E2B5",
+      // "editorBracketPairGuide.activeBackground5": "#B3D6F5",
+      // "editorBracketPairGuide.activeBackground6": "#D4A6D8",
+      "editorBracketHighlight.foreground1": "#95A5A6", // cool slate grey
+      "editorBracketHighlight.foreground2": "#A3BE8C", // soft green
+      "editorBracketHighlight.foreground3": "#EBCB8B", // muted gold
+      "editorBracketHighlight.foreground4": "#D08770", // soft orange
+      "editorBracketHighlight.foreground5": "#B48EAD", // lavender rose
+      "editorBracketHighlight.foreground6": "#88C0D0" // clear cyan-blue
+    }
+  },
+
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.middleClickBehavior": "paste",
+  "terminal.integrated.shellIntegration.decorationsEnabled": "gutter",
+  "editor.cursorWidth": 2,
+  "workbench.statusBar.visible": true,
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.cursorBlinking": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "editor.formatOnPaste": true,
+  "workbench.startupEditor": "none",
+  "csharp.dotnetPath": "/usr/bin/dotnet",
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 4,
+  "editor.indentSize": "tabSize",
+  "workbench.iconTheme": "icons",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "workbench.colorTheme": "Default Dark+",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.stickyScroll.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "git.autofetch": true,
+  "git.blame.editorDecoration.enabled": false,
+  "git.blame.statusBarItem.enabled": false,
+  "editor.inlineSuggest.showToolbar": "always",
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "search.defaultViewMode": "tree",
+  "workbench.tree.expandMode": "doubleClick",
+  "workbench.tree.renderIndentGuides": "always",
+  "breadcrumbs.icons": false,
+  "window.openWithoutArgumentsInNewWindow": "off",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.minimap.enabled": false,
+}
