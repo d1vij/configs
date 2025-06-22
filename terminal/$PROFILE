@@ -1,0 +1,42 @@
+# Run Node file from ./dist
+function noderun {
+    param (
+        [string]$filename
+    )
+
+    $filePath = "./dist/$filename.js"
+
+    if (Test-Path $filePath) {
+        node $filePath
+    } else {
+        Write-Host "File '$filename.js' not found in /dist." -ForegroundColor Red
+    }
+}
+
+# Measure time for any command
+function time {
+    $Command = $args -join " "
+    Measure-Command {
+        Invoke-Expression $Command 2>&1 | Out-Null
+    }
+}
+
+# Touch function — update or create file
+function touch {
+    param([string]$file)
+    if (Test-Path $file) {
+        Set-ItemProperty -Path $file -Name LastWriteTime -Value (Get-Date)
+        Write-Host "File timestamp updated: $file"
+    } else {
+        New-Item -Path $file -ItemType File
+        Write-Host "New file created: $file"
+    }
+}
+
+# Custom prompt — clean style
+function prompt {
+    $current = (Get-Location).Path
+    Write-Host "$current" -ForegroundColor Blue -NoNewline
+    Write-Host " $" -ForegroundColor Green -NoNewline
+    return " "
+}
