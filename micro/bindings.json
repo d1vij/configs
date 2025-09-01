@@ -1,0 +1,14 @@
+{
+	"Alt-Backspace":"DeleteWordRight",
+	"Ctrl-x": "Cut|CutLine",
+  	"CtrlLeftSq":"OutdentLine",
+  	"CtrlRightSq":"IndentLine",  	                        
+    "Shift-Ctrl-k": "DeleteLine",           
+    "Shift-Delete": "DeleteLine",           
+    "AltShiftDown": "SpawnMultiCursorDown",      
+    "Alt-Enter": "EndOfLine",                 
+	"Ctrl-t":"AddTab",
+    "Alt-/": "lua:comment.comment",
+	"\u001bctrlback":"DeleteWordLeft",
+    "CtrlUnderscore": "lua:comment.comment"
+}
