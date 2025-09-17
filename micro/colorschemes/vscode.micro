@@ -1,0 +1,39 @@
+# Dark+ Theme for Micro (256 colors)
+
+# Base
+color-link default "188,235"          # fg: #D4D4D4 ≈ 188, bg: #1E1E1E ≈ 235
+color-link cursor-line "236"          # subtle cursor line
+color-link line-number "242"          # dim gray numbers (#666666 ≈ 242)
+color-link current-line-number "188,238" # highlight active line number
+
+# Comments
+color-link comment "65"               # #6A9955 (green) ≈ 65
+
+# Identifiers
+color-link identifier "45"            # #11A8CD (cyan) ≈ 45
+color-link identifier.class "180"     # #DCDCAA (yellow) ≈ 180
+
+# Constants
+color-link constant "68"              # #2472C8 (blue) ≈ 68
+color-link constant.string "173"      # #CE9178 (orange-ish string) ≈ 173
+color-link constant.number "139"      # #B5CEA8 (light green numbers) ≈ 151
+
+# Preprocessor
+color-link preproc "176"              # #C586C0 (purple) ≈ 176
+
+# Types / Keywords
+color-link type "110"                 # bluish (#569CD6 brightBlue) ≈ 110
+color-link statement "110"            # keywords = bright blue
+
+# Specials
+color-link special "117"              # #9CDCFE brightCyan ≈ 117
+
+# Errors / TODO
+color-link error "160"                # #CD3131 red ≈ 160
+color-link todo "180"                 # #DCDCAA yellow ≈ 180
+
+# UI Elements
+color-link statusline "188,237"       # light fg, dark bg
+color-link tabbar "188,237"           # tabs same as statusline
+color-link gutter-error "160"         # red gutter marker
+color-link gutter-warning "180"       # yellow gutter marker
