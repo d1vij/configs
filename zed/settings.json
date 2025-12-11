@@ -7,161 +7,166 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "active_pane_modifiers": {
-    "inactive_opacity": 1.0
-  },
-  "tabs": {
-    "show_close_button": "hover",
-    "show_diagnostics": "errors",
-    "file_icons": false,
-    "git_status": false
-  },
-  "tab_bar": {
-    "show_nav_history_buttons": false,
-    "show": true
-  },
-  "title_bar": {
-    "show_menus": false,
-    "show_sign_in": true,
-    "show_user_picture": false,
-    "show_branch_icon": false
-  },
-  "debugger": {
-    "button": false
-  },
-  "status_bar": {
-    "cursor_position_button": true,
-    "active_language_button": true
-  },
-  "agent": {
-    "button": false,
-    "model_parameters": []
-  },
-  "notification_panel": {
-    "button": true
-  },
-  "outline_panel": {
-    "button": false
-  },
-  "terminal": {
-    "button": false,
-    "dock": "bottom"
-  },
-  "project_panel": {
-    "button": false,
-    "hide_hidden": false,
-    "hide_root": false,
-    "sticky_scroll": true,
-    "scrollbar": {
-      "show": "auto"
+    "format_on_save": "off",
+    "active_pane_modifiers": {
+        "inactive_opacity": 1.0
     },
-    "starts_open": false,
-    "auto_reveal_entries": true,
-    "git_status": true,
-    "folder_icons": true,
-    "file_icons": true,
-    "entry_spacing": "comfortable",
-    "hide_gitignore": false,
-    "dock": "left"
-  },
-  "collaboration_panel": {
-    "button": false,
-    "dock": "left"
-  },
-  "git_panel": {
-    "scrollbar": {
-      "show": "auto"
+    "tabs": {
+        "show_close_button": "hover",
+        "show_diagnostics": "errors",
+        "file_icons": false,
+        "git_status": false
     },
-    "button": false
-  },
-  "scrollbar": {
-    "git_diff": false
-  },
-  "show_whitespaces": "trailing",
-  "diagnostics_max_severity": "warning",
-  "diagnostics": {
-    "button": true,
-    "inline": {
-      "enabled": true
+    "tab_bar": {
+        "show_nav_history_buttons": false,
+        "show": true
+    },
+    "title_bar": {
+        "show_menus": false,
+        "show_sign_in": true,
+        "show_user_picture": false,
+        "show_branch_icon": false
+    },
+    "debugger": {
+        "button": false
+    },
+    "status_bar": {
+        "cursor_position_button": true,
+        "active_language_button": true
+    },
+    "agent": {
+        "button": false,
+        "model_parameters": []
+    },
+    "notification_panel": {
+        "button": true
+    },
+    "outline_panel": {
+        "button": false
+    },
+    "terminal": {
+        "button": false,
+        "dock": "bottom"
+    },
+    "project_panel": {
+        "button": false,
+        "hide_hidden": false,
+        "hide_root": false,
+        "sticky_scroll": true,
+        "scrollbar": {
+            "show": "auto"
+        },
+        "starts_open": false,
+        "auto_reveal_entries": true,
+        "git_status": true,
+        "folder_icons": true,
+        "file_icons": true,
+        "entry_spacing": "comfortable",
+        "hide_gitignore": false,
+        "dock": "left"
+    },
+    "collaboration_panel": {
+        "button": false,
+        "dock": "left"
+    },
+    "git_panel": {
+        "scrollbar": {
+            "show": "auto"
+        },
+        "button": false
+    },
+    "scrollbar": {
+        "git_diff": false
+    },
+    "show_whitespaces": "selection",
+    "diagnostics_max_severity": "warning",
+    "diagnostics": {
+        "button": true,
+        "inline": {
+            "enabled": true
+        }
+    },
+    "snippet_sort_order": "inline",
+    "show_signature_help_after_edits": true,
+    "tab_size": 4,
+    "languages": {
+        "TypeScript": {
+            "inlay_hints": {
+                "show_background": true
+            }
+        }
+    },
+    "toolbar": {
+        "selections_menu": true,
+        "code_actions": false,
+        "agent_review": false,
+        "quick_actions": false,
+        "breadcrumbs": false
+    },
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 1000
+        }
+    },
+    "gutter": {
+        "min_line_number_digits": 1,
+        "breakpoints": false
+    },
+    "prettier": {
+        "allowed": true
+    },
+    "relative_line_numbers": "wrapped",
+    "auto_signature_help": false,
+    "show_wrap_guides": true,
+    "ui_font_weight": 500.0,
+    "use_system_path_prompts": false,
+    "buffer_line_height": "comfortable",
+    "buffer_font_weight": 400.0,
+    "wsl_connections": [
+        {
+            "distro_name": "d1vij-ubuntu",
+            "user": null,
+            "projects": []
+        }
+    ],
+    "auto_update": true,
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "use_system_prompts": false,
+    "disable_ai": true,
+    "buffer_font_family": "FiraCode Nerd Font",
+    "minimap": {
+        "show": "never"
+    },
+    "git": {
+        "git_gutter": "hide",
+        "inline_blame": {
+            "enabled": false
+        }
+    },
+    "inlay_hints": {
+        "show_value_hints": false,
+        "show_type_hints": true,
+        "show_parameter_hints": true,
+        "show_other_hints": true,
+        "show_background": false,
+        "enabled": true
+    },
+    "confirm_quit": true,
+    "ui_font_family": ".ZedMono",
+    "vim_mode": true,
+    "ui_font_size": 16,
+    "buffer_font_size": 16.0,
+    "buffer_font_features": { "calt": true },
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "One Dark"
+    },
+
+    "vim": {
+        "use_system_clipboard": "on_yank"
     }
-  },
-  "snippet_sort_order": "inline",
-  "show_signature_help_after_edits": true,
-  "tab_size": 2,
-  "languages": {
-    "TypeScript": {
-      "inlay_hints": {
-        "show_background": true
-      }
-    }
-  },
-  "toolbar": {
-    "selections_menu": true,
-    "code_actions": false,
-    "agent_review": false,
-    "quick_actions": false,
-    "breadcrumbs": false
-  },
-  "autosave": {
-    "after_delay": {
-      "milliseconds": 1000
-    }
-  },
-  "gutter": {
-    "min_line_number_digits": 1,
-    "breakpoints": false
-  },
-  "prettier": {
-    "allowed": true
-  },
-  "relative_line_numbers": "wrapped",
-  "auto_signature_help": false,
-  "show_wrap_guides": true,
-  "ui_font_weight": 500.0,
-  "use_system_path_prompts": false,
-  "buffer_line_height": "comfortable",
-  "buffer_font_weight": 500.0,
-  "wsl_connections": [
-    {
-      "distro_name": "d1vij-ubuntu",
-      "user": null,
-      "projects": []
-    }
-  ],
-  "auto_update": true,
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
-  "use_system_prompts": false,
-  "disable_ai": true,
-  "buffer_font_family": "FiraCode Nerd Font",
-  "minimap": {
-    "show": "never"
-  },
-  "git": {
-    "git_gutter": "hide",
-    "inline_blame": {
-      "enabled": false
-    }
-  },
-  "inlay_hints": {
-    "show_value_hints": false,
-    "show_type_hints": true,
-    "show_parameter_hints": true,
-    "show_other_hints": true,
-    "show_background": false,
-    "enabled": true
-  },
-  "confirm_quit": true,
-  "ui_font_family": ".ZedMono",
-  "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 15.0,
-  "buffer_font_features": { "calt": true },
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark"
-  }
 }
