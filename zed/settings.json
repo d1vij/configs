@@ -1,172 +1,292 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
-    "format_on_save": "off",
+    "cursor_shape": "bar",
+    "cursor_blink": false,
+    "calls": {
+        "mute_on_join": true,
+    },
+    "which_key": {
+        "enabled": false,
+    },
     "active_pane_modifiers": {
-        "inactive_opacity": 1.0
-    },
-    "tabs": {
-        "show_close_button": "hover",
-        "show_diagnostics": "errors",
-        "file_icons": false,
-        "git_status": false
-    },
-    "tab_bar": {
-        "show_nav_history_buttons": false,
-        "show": true
-    },
-    "title_bar": {
-        "show_menus": false,
-        "show_sign_in": true,
-        "show_user_picture": false,
-        "show_branch_icon": false
-    },
-    "debugger": {
-        "button": false
-    },
-    "status_bar": {
-        "cursor_position_button": true,
-        "active_language_button": true
+        "inactive_opacity": 1.0,
     },
     "agent": {
         "button": false,
-        "model_parameters": []
+        "model_parameters": [],
     },
-    "notification_panel": {
-        "button": true
-    },
-    "outline_panel": {
-        "button": false
-    },
-    "terminal": {
-        "button": false,
-        "dock": "bottom"
-    },
-    "project_panel": {
-        "button": false,
-        "hide_hidden": false,
-        "hide_root": false,
-        "sticky_scroll": true,
-        "scrollbar": {
-            "show": "auto"
+    "auto_indent": true,
+    "auto_signature_help": true,
+    "auto_update": true,
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 1000,
         },
-        "starts_open": false,
-        "auto_reveal_entries": true,
-        "git_status": true,
-        "folder_icons": true,
-        "file_icons": true,
-        "entry_spacing": "comfortable",
-        "hide_gitignore": false,
-        "dock": "left"
     },
+    "buffer_font_family": "FiraCode Nerd Font",
+    "buffer_font_features": {
+        "calt": true,
+    },
+    "buffer_font_size": 16.0,
+    "buffer_font_weight": 400.0,
+    "buffer_line_height": "comfortable",
     "collaboration_panel": {
         "button": false,
-        "dock": "left"
+        "dock": "left",
     },
-    "git_panel": {
-        "scrollbar": {
-            "show": "auto"
-        },
-        "button": false
+    "confirm_quit": true,
+    "debugger": {
+        "button": false,
     },
-    "scrollbar": {
-        "git_diff": false
-    },
-    "show_whitespaces": "selection",
-    "diagnostics_max_severity": "warning",
     "diagnostics": {
         "button": true,
         "inline": {
-            "enabled": true
-        }
+            "enabled": true,
+        },
     },
-    "snippet_sort_order": "inline",
-    "show_signature_help_after_edits": true,
-    "tab_size": 4,
-    "languages": {
-        "TypeScript": {
-            "inlay_hints": {
-                "show_background": true
-            }
-        }
-    },
-    "toolbar": {
-        "selections_menu": true,
-        "code_actions": false,
-        "agent_review": false,
-        "quick_actions": false,
-        "breadcrumbs": false
-    },
-    "autosave": {
-        "after_delay": {
-            "milliseconds": 1000
-        }
-    },
-    "gutter": {
-        "min_line_number_digits": 1,
-        "breakpoints": false
-    },
-    "prettier": {
-        "allowed": true
-    },
-    "relative_line_numbers": "wrapped",
-    "auto_signature_help": false,
-    "show_wrap_guides": true,
-    "ui_font_weight": 500.0,
-    "use_system_path_prompts": false,
-    "buffer_line_height": "comfortable",
-    "buffer_font_weight": 400.0,
-    "wsl_connections": [
-        {
-            "distro_name": "d1vij-ubuntu",
-            "user": null,
-            "projects": []
-        }
-    ],
-    "auto_update": true,
-    "telemetry": {
-        "diagnostics": false,
-        "metrics": false
-    },
-    "use_system_prompts": false,
+    "diagnostics_max_severity": "warning",
     "disable_ai": true,
-    "buffer_font_family": "FiraCode Nerd Font",
-    "minimap": {
-        "show": "never"
-    },
+    "format_on_save": "off",
     "git": {
         "git_gutter": "hide",
         "inline_blame": {
-            "enabled": false
-        }
+            "enabled": false,
+        },
+    },
+    "git_panel": {
+        "button": false,
+        "scrollbar": {
+            "show": "auto",
+        },
+    },
+    "gutter": {
+        "breakpoints": false,
+        "min_line_number_digits": 1,
+    },
+    "hard_tabs": false,
+    "hide_mouse": "on_typing_and_movement",
+    "icon_theme": "Colored Zed Icons Theme Dark",
+    "indent_guides": {
+        "background_coloring": "disabled",
+        "coloring": "fixed",
+        "enabled": true,
     },
     "inlay_hints": {
-        "show_value_hints": false,
-        "show_type_hints": true,
-        "show_parameter_hints": true,
-        "show_other_hints": true,
+        "enabled": true,
         "show_background": false,
-        "enabled": true
+        "show_other_hints": true,
+        "show_parameter_hints": true,
+        "show_type_hints": true,
+        "show_value_hints": true,
     },
-    "confirm_quit": true,
-    "ui_font_family": ".ZedMono",
-    "vim_mode": true,
-    "ui_font_size": 16,
-    "buffer_font_size": 16.0,
-    "buffer_font_features": { "calt": true },
+    "lsp": {
+        "biome": {
+            "settings": {
+                "require_config_file": false,
+            },
+        },
+        "vtsls": {
+            "settings": {
+                "typescript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                },
+                "javascript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                },
+                "vtsls": {
+                    "experimental": {
+                        "maxInlayHintLength": 25,
+                    },
+                },
+            },
+            "enable_lsp_tasks": true,
+        },
+        "vscode-css-language-server": {
+            "settings": {
+                "css": {
+                    "lint": {
+                        "unknownAtRules": "ignore",
+                    },
+                },
+            },
+        },
+    },
+    "languages": {
+        "SCSS": {
+            "language_servers": [
+                "scss-lsp",
+                "some-sass-lsp",
+                "tailwindcss-language-server",
+            ],
+        },
+        "CSS": {
+            "language_servers": ["tailwindcss-language-server", "..."],
+        },
+        "Go": {
+            "formatter": "language_server",
+        },
+        "Python": {
+            "formatter": "language_server",
+        },
+        "TypeScript": {
+            "formatter": {
+                "language_server": {
+                    "name": "biome"
+                }
+            },
+            "tab_size": 4,
+            "inlay_hints": {
+                "show_background": true,
+            },
+        },
+        "TSX": {
+            "formatter": {
+                "language_server": {
+                    "name": "biome"
+                }
+            },
+            "tab_size": 4,
+        },
+    },
+    "minimap": {
+        "thumb_border": "left_open",
+        "show": "never",
+    },
+    "notification_panel": {
+        "button": true,
+    },
+    "outline_panel": {
+        "auto_fold_dirs": false,
+        "button": true,
+    },
+    "prettier": {
+        "allowed": true,
+        "tabWidth": 4,
+    },
+    "project_panel": {
+        "auto_open": {
+            "on_drop": false,
+            "on_paste": false,
+            "on_create": false,
+        },
+        "auto_fold_dirs": false,
+        "auto_reveal_entries": true,
+        "button": true,
+        "default_width": 300.0,
+        "dock": "left",
+        "entry_spacing": "comfortable",
+        "file_icons": true,
+        "folder_icons": true,
+        "git_status": true,
+        "hide_gitignore": false,
+        "hide_hidden": false,
+        "hide_root": true,
+        "scrollbar": {
+            "show": "auto",
+        },
+        "starts_open": false,
+        "sticky_scroll": true,
+    },
+    "redact_private_values": false,
+    "relative_line_numbers": "wrapped",
+    "scrollbar": {
+        "axes": {
+            "vertical": true,
+        },
+        "show": "auto",
+        "git_diff": false,
+    },
+    "search": {
+        "button": false,
+    },
+    "session": {
+        "trust_all_worktrees": true,
+    },
+    "show_signature_help_after_edits": true,
+    "show_whitespaces": "selection",
+    "show_wrap_guides": true,
+    "snippet_sort_order": "inline",
+    "ssh_connections": [
+        {
+            "args": [],
+            "host": "mahira",
+            "projects": [
+                {
+                    "paths": ["/data/data/com.termux/files/home"],
+                },
+            ],
+        },
+        {
+            "args": [],
+            "host": "oneplus",
+            "projects": [
+                {
+                    "paths": ["/data/data/com.termux/files/home/coding"],
+                },
+                {
+                    "paths": [
+                        "/data/data/com.termux/files/home/coding/random/./",
+                    ],
+                },
+            ],
+        },
+    ],
+    "status_bar": {
+        "active_language_button": true,
+        "cursor_position_button": true,
+    },
+    "tab_bar": {
+        "show": true,
+        "show_nav_history_buttons": false,
+    },
+    "tab_size": 4,
+    "tabs": {
+        "file_icons": false,
+        "git_status": false,
+        "show_close_button": "hover",
+        "show_diagnostics": "errors",
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+    },
+    "terminal": {
+        "font_size": 15.0,
+        "blinking": "on",
+        "button": true,
+        "dock": "bottom",
+    },
     "theme": {
+        "dark": "One Dark",
+        "light": "One Dark",
         "mode": "system",
-        "light": "One Light",
-        "dark": "One Dark"
     },
-
+    "title_bar": {
+        "show_branch_icon": false,
+        "show_menus": false,
+        "show_project_items": true,
+        "show_sign_in": false,
+        "show_user_menu": false,
+        "show_user_picture": false,
+    },
+    "toolbar": {
+        "agent_review": false,
+        "breadcrumbs": false,
+        "code_actions": false,
+        "quick_actions": false,
+        "selections_menu": true,
+    },
+    "ui_font_family": ".ZedMono",
+    "ui_font_size": 16,
+    "ui_font_weight": 500.0,
+    "use_system_path_prompts": false,
+    "use_system_prompts": false,
     "vim": {
-        "use_system_clipboard": "on_yank"
-    }
+        "toggle_relative_line_numbers": true,
+        "use_system_clipboard": "on_yank",
+    },
+    "vim_mode": true,
 }
