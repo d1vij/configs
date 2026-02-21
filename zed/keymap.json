@@ -1,0 +1,68 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            // "shift shift": "file_finder::Toggle"
+        },
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            // "j k": "vim::NormalBefore"
+        },
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "alt-shift-f": "editor::Format",
+        },
+    },
+    {
+        "bindings": {
+            "ctrl-shift-o": "workspace::OpenFiles",
+        },
+    },
+    {
+        "context": "RulesLibrary",
+        "bindings": {
+            "ctrl-w": null,
+        },
+    },
+    {
+        "context": "SettingsWindow",
+        "bindings": {
+            "ctrl-w": null,
+        },
+    },
+    {
+        "context": "SettingsWindow",
+        "bindings": {
+            "ctrl-w": null,
+        },
+    },
+    {
+        "context": "SettingsWindow",
+        "bindings": {
+            "ctrl-alt-> alt-.": "workspace::CloseWindow",
+        },
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-j": null
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-z": null
+        }
+    }
+]
