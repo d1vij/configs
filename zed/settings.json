@@ -1,4 +1,6 @@
 {
+    "lsp_document_colors": "inlay",
+    "colorize_brackets": false,
     "cursor_shape": "bar",
     "cursor_blink": false,
     "calls": {
@@ -15,7 +17,7 @@
         "model_parameters": [],
     },
     "auto_indent": true,
-    "auto_signature_help": true,
+    "auto_signature_help": false,
     "auto_update": true,
     "autosave": {
         "after_delay": {
@@ -23,10 +25,11 @@
         },
     },
     "buffer_font_family": "FiraCode Nerd Font",
+    // "buffer_font_family": "Times New Roman",
     "buffer_font_features": {
         "calt": true,
     },
-    "buffer_font_size": 16.0,
+    "buffer_font_size": 15,
     "buffer_font_weight": 400.0,
     "buffer_line_height": "comfortable",
     "collaboration_panel": {
@@ -75,13 +78,13 @@
         "show_background": false,
         "show_other_hints": true,
         "show_parameter_hints": true,
-        "show_type_hints": true,
+        "show_type_hints": false,
         "show_value_hints": true,
     },
     "lsp": {
         "biome": {
             "settings": {
-                "require_config_file": false,
+                "require_config_file": true,
             },
         },
         "vtsls": {
