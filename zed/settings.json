@@ -1,4 +1,5 @@
 {
+    "restore_on_startup": "launchpad",
     "lsp_document_colors": "inlay",
     "colorize_brackets": false,
     "cursor_shape": "bar",
@@ -16,7 +17,7 @@
         "button": false,
         "model_parameters": [],
     },
-    "auto_indent": true,
+    "auto_indent": "syntax_aware",
     "auto_signature_help": false,
     "auto_update": true,
     "autosave": {
@@ -32,10 +33,7 @@
     "buffer_font_size": 15,
     "buffer_font_weight": 400.0,
     "buffer_line_height": "comfortable",
-    "collaboration_panel": {
-        "button": false,
-        "dock": "left",
-    },
+    "collaboration_panel": { "button": false, "dock": "left" },
     "confirm_quit": true,
     "debugger": {
         "button": false,
@@ -52,11 +50,12 @@
     "git": {
         "git_gutter": "hide",
         "inline_blame": {
+            "show_commit_summary": false,
             "enabled": false,
         },
     },
     "git_panel": {
-        "button": false,
+        "button": true,
         "scrollbar": {
             "show": "auto",
         },
@@ -67,7 +66,11 @@
     },
     "hard_tabs": false,
     "hide_mouse": "on_typing_and_movement",
-    "icon_theme": "Colored Zed Icons Theme Dark",
+    "icon_theme": {
+        "mode": "light",
+        "light": "Colored Zed Icons Theme Dark",
+        "dark": "Colored Zed Icons Theme Dark"
+    },
     "indent_guides": {
         "background_coloring": "disabled",
         "coloring": "fixed",
@@ -84,6 +87,13 @@
     "lsp": {
         "biome": {
             "settings": {
+                "linter": {
+                    "rules": {
+                        "suspicious": {
+                            "noUnknownAtRules": "off",
+                        },
+                    },
+                },
                 "require_config_file": true,
             },
         },
@@ -107,8 +117,31 @@
             },
             "enable_lsp_tasks": true,
         },
+        "some-sass-lsp": {
+            "settings": {
+                "scss": {
+                    "lint": {
+                        "unknownAtRules": "ignore",
+                    },
+                },
+            },
+        },
+        "scss-lsp": {
+            "settings": {
+                "scss": {
+                    "lint": {
+                        "unknownAtRules": "ignore",
+                    },
+                },
+            },
+        },
         "vscode-css-language-server": {
             "settings": {
+                "scss": {
+                    "lint": {
+                        "unknownAtRules": "ignore",
+                    },
+                },
                 "css": {
                     "lint": {
                         "unknownAtRules": "ignore",
@@ -116,42 +149,76 @@
                 },
             },
         },
+        "tailwindcss-language-server": {
+            "settings": {
+                "classFunctions": ["tv"],
+            },
+        },
     },
     "languages": {
+        "JSON": {
+            "formatter": [
+                {
+                    "language_server": {
+                        "name": "biome",
+                    },
+                },
+            ],
+        },
+        "Svelte": {
+            "language_servers": [
+                "svelte-language-server",
+                "tailwindcss-language-server",
+                "eslint",
+                "vscode-css-language-server",
+                "prettier",
+                "!biome",
+            ],
+        },
         "SCSS": {
             "language_servers": [
-                "scss-lsp",
-                "some-sass-lsp",
                 "tailwindcss-language-server",
+                "!scss-lsp",
+                "some-sass-lsp",
+                "!vscode-css-language-server",
             ],
         },
         "CSS": {
-            "language_servers": ["tailwindcss-language-server", "..."],
+            "formatter": "language_server",
+            "language_servers": [
+                "tailwindcss-language-server",
+                "vscode-css-language-server",
+                "biome",
+            ],
         },
         "Go": {
             "formatter": "language_server",
         },
         "Python": {
             "formatter": "language_server",
+            "language_servers": ["!pylsp", "basedpyright", "ruff", "ty"],
         },
         "TypeScript": {
-            "formatter": {
-                "language_server": {
-                    "name": "biome"
-                }
-            },
+            "formatter": "language_server",
+            "language_servers": ["biome", "vtsls"],
             "tab_size": 4,
             "inlay_hints": {
+                "show_type_hints": false,
                 "show_background": true,
             },
         },
         "TSX": {
             "formatter": {
                 "language_server": {
-                    "name": "biome"
-                }
+                    "name": "biome",
+                },
             },
             "tab_size": 4,
+            "language_servers": [
+                "biome",
+                "vtsls",
+                "tailwindcss-language-server",
+            ],
         },
     },
     "minimap": {
@@ -159,6 +226,7 @@
         "show": "never",
     },
     "notification_panel": {
+        "dock": "left",
         "button": true,
     },
     "outline_panel": {
@@ -185,7 +253,7 @@
         "folder_icons": true,
         "git_status": true,
         "hide_gitignore": false,
-        "hide_hidden": false,
+        "hide_hidden": true,
         "hide_root": true,
         "scrollbar": {
             "show": "auto",
@@ -257,6 +325,7 @@
         "metrics": false,
     },
     "terminal": {
+        "copy_on_select": false,
         "font_size": 15.0,
         "blinking": "on",
         "button": true,
@@ -265,7 +334,7 @@
     "theme": {
         "dark": "One Dark",
         "light": "One Dark",
-        "mode": "system",
+        "mode": "light",
     },
     "title_bar": {
         "show_branch_icon": false,
@@ -289,7 +358,13 @@
     "use_system_prompts": false,
     "vim": {
         "toggle_relative_line_numbers": true,
-        "use_system_clipboard": "on_yank",
+        "use_system_clipboard": "never",
     },
     "vim_mode": true,
+    "hidden_files": [
+        "**/__pycache__",
+        ".pytest_cache",
+        ".ruff_cache",
+        ".python-version",
+    ],
 }

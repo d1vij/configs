@@ -44,12 +44,6 @@
     {
         "context": "SettingsWindow",
         "bindings": {
-            "ctrl-w": null,
-        },
-    },
-    {
-        "context": "SettingsWindow",
-        "bindings": {
             "ctrl-alt-> alt-.": "workspace::CloseWindow",
         },
     },
@@ -63,6 +57,12 @@
         "context": "Editor",
         "bindings": {
             "ctrl-z": null
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-;": null
         }
     }
 ]
