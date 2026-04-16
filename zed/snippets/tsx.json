@@ -1,0 +1,19 @@
+{
+    "Export default function": {
+        "prefix": "$edf",
+        "body": ["export default function ${1:Name}(${2}) {", "\t$0", "}"],
+        "description": "Export default function declaration"
+    },
+    "Type props declaration": {
+        "prefix": "$props",
+        "body": ["type ${1:Name}Props = {", "\t$0", "};"],
+        "description": "TypeScript props type declaration"
+    },
+    "React setState type alias": {
+        "prefix": "$statefunc",
+        "body": [
+            "type ${1:StateFunction}<${2:T}> = React.Dispatch<React.SetStateAction<${2:T}>>;"
+        ],
+        "description": "Type alias for React useState setter"
+    }
+}

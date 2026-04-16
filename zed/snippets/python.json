@@ -1,0 +1,13 @@
+{
+    "Python main with guard": {
+        "prefix": "$main",
+        "body": [
+            "def main():",
+            "    $0...",
+            "",
+            "if __name__ == \"__main__\":",
+            "    main()"
+        ],
+        "description": "Creates def main() and __main__ guard"
+    }
+}
