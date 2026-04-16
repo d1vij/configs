@@ -34,6 +34,11 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias _copy="xclip -sel copy"
+# alias code=codium
+alias gsconnect="/home/divij/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io/service/daemon.js"
+alias pn=pnpm
+
 # Shopts
 
 # append to the history file, don't overwrite it
@@ -52,6 +57,8 @@ shopt -s extglob
 PATHS=(
   "~/bin"
   "~/.local/bin"
+  "~/.bun/bin"
+  "~/Applications/android-studio/bin"
   $PATH
 )
 
@@ -85,3 +92,20 @@ stty werase \^H
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 eval "$(fzf --bash)"
+
+export PATH=$PATH:/home/divij/.spicetify
+. "$HOME/.cargo/env"
+
+# pnpm
+export PNPM_HOME="/home/divij/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+source ~/completion-for-pnpm.bash
+
+
+
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"
